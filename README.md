@@ -19,29 +19,29 @@ yarn add get-package-github-url
 ```js
 import getPackageGithubUrl from 'get-package-github-url'
 
+getPackageGithubUrl('promisify-dom-selector') // a sample npm package
+  .then((githubUrl) => {
+    // ...
+  })
+
+// or you can use it with async/await
+async () => {
+  const githubUrl = await getPackageGithubUrl('promisify-dom-selector')
+  // ...
+}
 // ...
 ```
 
 
 ## API
 
-### getPackageGithubUrl(input, [options])
+### getPackageGithubUrl(packageName)
 
-#### input
+#### packageName
 
 Type: `string`
 
-Lorem ipsum.
-
-#### options
-
-##### foo
-
-Type: `boolean`<br>
-Default: `false`
-
-Lorem ipsum.
-
+The name of a npm package. It corresponds to the field `name` of the `package.json`.
 
 ## License
 
