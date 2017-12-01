@@ -29,7 +29,6 @@ async () => {
   const githubUrl = await getPackageGithubUrl('promisify-dom-selector')
   // ...
 }
-// ...
 ```
 
 
