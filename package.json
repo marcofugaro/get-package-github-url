@@ -1,15 +1,15 @@
 {
-	"name": "get-package-github-url",
-	"version": "0.0.0",
-	"description": "Get the github URL of a npm package",
-	"license": "MIT",
-	"repository": "marcofugaro/get-package-github-url",
-	"author": {
-		"name": "Marco Fugaro",
-		"email": "marco.fugaro@gmail.com",
-		"url": "marcofugaro.it"
-	},
-	"keywords": [
+  "name": "get-package-github-url",
+  "version": "0.0.0",
+  "description": "Get the github URL of a npm package",
+  "license": "MIT",
+  "repository": "marcofugaro/get-package-github-url",
+  "author": {
+    "name": "Marco Fugaro",
+    "email": "marco.fugaro@gmail.com",
+    "url": "marcofugaro.it"
+  },
+  "keywords": [
     "get",
     "package",
     "npm",
@@ -20,29 +20,36 @@
     "link"
   ],
   "scripts": {
-		"build": "rollup -c && npm run minify",
+    "build": "rollup -c && npm run minify",
     "minify": "minify build/get-package-github-url.js --out-file build/get-package-github-url.min.js",
-		"test": "ava",
+    "test": "ava",
     "prepublish": "npm run build"
-	},
-	"main": "build/get-package-github-url.js",
+  },
+  "main": "build/get-package-github-url.js",
   "files": [
     "build/"
   ],
   "engines": {
     "node": ">=4"
   },
-	"dependencies": {},
-	"devDependencies": {
+  "ava": {
+    "require": [
+      "babel-register",
+      "babel-polyfill"
+    ]
+  },
+  "dependencies": {},
+  "devDependencies": {
     "ava": "^0.21.0",
     "babel-minify": "^0.2.0",
-		"babel-plugin-lodash": "^3.2.11",
-		"babel-plugin-transform-decorators-legacy": "^1.3.4",
-		"babel-preset-env": "^1.6.0",
-		"babel-preset-stage-0": "^6.24.1",
-		"rollup": "^0.45.2",
-		"rollup-plugin-babel": "^2.7.1",
-		"rollup-plugin-commonjs": "^8.0.2",
-		"rollup-plugin-node-resolve": "^3.0.0"
-	}
+    "babel-plugin-lodash": "^3.2.11",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "rollup": "^0.45.2",
+    "rollup-plugin-babel": "^2.7.1",
+    "rollup-plugin-commonjs": "^8.0.2",
+    "rollup-plugin-node-resolve": "^3.0.0"
+  }
 }

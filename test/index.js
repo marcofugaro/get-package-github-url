@@ -1,5 +1,5 @@
 import test from 'ava'
-import getPackageGithubUrl from '../src'
+import getPackageGithubUrl from '../build/get-package-github-url'
 
 test('repository string', async t => {
   const githubUrl = await getPackageGithubUrl('get-package-github-url')
