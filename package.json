@@ -24,7 +24,7 @@
     "minify": "minify build/get-package-github-url.js --out-file build/get-package-github-url.min.js",
     "pretest": "npm run build",
     "test": "ava",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run test"
   },
   "main": "build/get-package-github-url.js",
   "files": [
