@@ -4,10 +4,12 @@ import babel from 'rollup-plugin-babel'
 import pkg from './package.json'
 
 export default {
-  entry: 'src/index.js',
-  format: 'umd',
-  moduleName: 'getPackageGithubUrl',
-  dest: pkg.main,
+  input: 'src/index.js',
+  output: {
+    file: pkg.main,
+    format: 'umd',
+    name: 'getPackageGithubUrl',
+  },
   plugins: [
     resolve(),
     commonjs(),
