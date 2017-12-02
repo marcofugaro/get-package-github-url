@@ -1,6 +1,6 @@
 {
   "name": "get-package-github-url",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Get the github URL of a npm package",
   "license": "MIT",
   "repository": "marcofugaro/get-package-github-url",
