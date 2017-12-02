@@ -20,7 +20,8 @@
     "link"
   ],
   "scripts": {
-    "build": "rollup -c && npm run minify",
+    "build": "rollup -c",
+    "postbuild": "npm run minify",
     "minify": "minify build/get-package-github-url.js --out-file build/get-package-github-url.min.js",
     "pretest": "npm run build",
     "test": "ava",
