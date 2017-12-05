@@ -42,6 +42,8 @@ Type: `string`
 
 The name of a npm package. It corresponds to the field `name` of the `package.json`.
 
+It returns `null` if the github url is not found.
+
 ## License
 
 MIT © [Marco Fugaro](https://github.com/marcofugaro)
