@@ -2,7 +2,7 @@ export default async function getPackageGithubUrl(packageName) {
   const { repository } = await fetch(`https://registry.npmjs.org/${packageName}`)
     .then((res) => res.json())
 
-  if (!repository || repository.type !== 'git')
+  if (!repository || (repository.type && repository.type !== 'git'))
     return null
 
   let { url } = repository
