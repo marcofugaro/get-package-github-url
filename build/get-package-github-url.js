@@ -789,7 +789,7 @@ var index = (function () {
             _ref2 = _context.sent;
             repository = _ref2.repository;
 
-            if (!(!repository || repository.type !== 'git')) {
+            if (!(!repository || repository.type && repository.type !== 'git')) {
               _context.next = 6;
               break;
             }
