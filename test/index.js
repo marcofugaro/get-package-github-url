@@ -10,3 +10,8 @@ test('repository object', async t => {
   const githubUrl = await getPackageGithubUrl('lodash')
   t.is(githubUrl, 'https://github.com/lodash/lodash')
 })
+
+test('weird repository string', async t => {
+  const githubUrl = await getPackageGithubUrl('gulp-eslint-if-fixed')
+  t.is(githubUrl, 'https://github.com/lukeapage/gulp-eslint-if-fixed')
+})
